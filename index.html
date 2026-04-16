@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人ポートフォリオ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">ホーム</a></li>
+                <li><a href="#about" class="nav-link">について</a></li>
+                <li><a href="#projects" class="nav-link">プロジェクト</a></li>
+                <li><a href="#skills" class="nav-link">スキル</a></li>
+                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ホームセクション -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>こんにちは、私は開発者です</h1>
+                <p>創造的でスケーラブルなウェブソリューションを構築しています</p>
+                <a href="#projects" class="btn btn-primary">プロジェクトを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- アバウトセクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>について</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        私はフルスタック開発者で、3年以上の経験があります。
+                        HTML、CSS、JavaScript、そして様々なフレームワークを使用して、
+                        ユーザーフレンドリーで効率的なWebアプリケーションを構築することに情熱を持っています。
+                    </p>
+                    <p>
+                        常に新しい技術を学び、プロジェクトの品質を向上させることを目指しています。
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/300x300" alt="プロフィール画像">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>プロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="プロジェクト1">
+                    <h3>プロジェクト1</h3>
+                    <p>React + Firebase を使用したリアルタイムチャットアプリケーション</p>
+                    <a href="#" class="project-link">詳細を見る →</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="プロジェクト2">
+                    <h3>プロジェクト2</h3>
+                    <p>Node.js + MongoDB を使用したTODOリスト管理アプリ</p>
+                    <a href="#" class="project-link">詳細を見る →</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300x200" alt="プロジェクト3">
+                    <h3>プロジェクト3</h3>
+                    <p>Vue.js を使用した天気予報アプリケーション</p>
+                    <a href="#" class="project-link">詳細を見る →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>バックエンド</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>Express</li>
+                        <li>Django</li>
+                        <li>REST API</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>データベース</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>ツール</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="お名前" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="メールアドレス" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="メッセージ" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 個人ポートフォリオ. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://twitter.com" target="_blank" title="Twitter">Twitter</a>
+                <a href="https://github.com" target="_blank" title="GitHub">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
